@@ -96,7 +96,7 @@ describe('Server tests', () => {
                 const { message, token } = res.body
                 expect(message).toBe("welcome, Jimmy John")
                 expect(token).toBeDefined()
-                jwt.verify(token, jwtSecret, (err, decoded) => {
+                jwt.verify(token, jwtSecret, (err, decoded) => { // eslint-disable-line no-unused-vars
                     expect(err).toBeFalsy()
                 })
             })

@@ -122,4 +122,4 @@ dist
 .vscode
 
 # databases
-*.db3
+# *.db3
